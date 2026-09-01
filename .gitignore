@@ -1,0 +1,12 @@
+.DS_Store
+.cache/
+
+# Local build and test output
+/nm
+*.test
+coverage.out
+
+# Benchmark artifacts
+/qq.txt
+/results_*/
+/assets/*.pdf
