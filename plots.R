@@ -174,7 +174,7 @@ for (scenario in scenarios) {
         "Manager latency: %s CPU, %s clients, %s QPS, %s address(es), reorg=%s",
         values$gomaxprocs, values$clients, values$qps, values$addrs, values$reorg
       ),
-      x = "Transaction failure probability",
+      x = "Probability of returning a nonce",
       y = "Latency (ns)",
       fill = "Manager"
     ) +
@@ -236,7 +236,7 @@ for (scenario in scenarios) {
     geom_hline(yintercept = values$qps, linetype = "dashed", color = "grey50") +
     labs(
       title = sprintf("Achieved throughput: %s", suffix),
-      x = "Transaction failure probability",
+      x = "Probability of returning a nonce",
       y = "Completed operations per second",
       color = "Manager"
     ) +
